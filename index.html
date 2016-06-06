@@ -1,0 +1,20 @@
+<html ng-app="university">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	
+	<div class="list-group">
+		<div class="list-group-item" ng-controller="GroupStudents as group">
+			<div ng-repeat="student in group.students">
+				<h2>Name: {{student.name}}</h2>
+				<h3>Age: {{student.age}}</h3>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
